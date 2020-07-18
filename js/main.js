@@ -10,7 +10,8 @@ function consultaCep() {
     setTimeout(function(){
         var cep = document.getElementById("cep").value;
         cep = cep.replace("-","");
-        var url = "http://viacep.com.br/ws/{cep}/json".replace("{cep}", cep);
+        //var url = "http://viacep.com.br/ws/{cep}/json".replace("{cep}", cep);
+        var url = `http://viacep.com.br/ws/${cep}/json`
         
         $.ajax({
             url: url, 
